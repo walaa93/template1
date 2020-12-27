@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.clearfix {
+  clear: both;
+}
+/*start navbar*/
+nav {
+  background-color: #f37121;
+  color: #fff;
+  cursor: pointer;
+}
+.container .logo {
+  width: 40%;
+  float: left;
+  font-family: cursive;
+  font-size: 20px;
+}
+.container .list {
+  width: 60%;
+  float: right;
+  text-align: center;
+}
+.list ul {
+  list-style: none;
+  padding: 0;
+}
+.list ul li {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 20px;
+  text-transform: capitalize;
+  font-family: arial;
+  padding: 15px 0;
+}
+/*end navbar*/
+/*start header*/
+.header {
+  background-image: url("../templet1images/header.jpg");
+  height: 570px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header .info {
+  text-align: center;
+  padding-top: 120px;
+}
+.header .info h2 {
+  font-size: 65px;
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+}
+.header .info p {
+  font-size: 22px;
+  color: #bbb;
+  margin: 15px;
+}
+.header .info button {
+  background-color: #f37121;
+  border: none;
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 8px;
+}
+.info button:hover {
+  border: 2px solid #f37121;
+  background-color: transparent;
+  border-radius: 8px;
+}
+/*End header*/
+/*start about*/
+.about {
+  margin-top: 100px;
+}
+.about .info {
+  float: left;
+  width: 60%;
+}
+.about .info h2 {
+  color: #f37121;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: arial;
+}
+.about .info p {
+  color: #777;
+  font-size: 17px;
+  padding-right: 70px;
+  line-height: 1.7;
+  font-family: sans-serif;
+}
+.about .info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+.about .info ul li {
+  margin-bottom: 10px;
+  color: #777;
+}
+.about .info ul li i {
+  color: aqua;
+  margin-right: 15px;
+}
+.about .image {
+  float: right;
+  width: 40%;
+}
+.about .image img {
+  width: 100%;
+  height: 400px;
+}
+/*End about*/
+/*start about team*/
+
+.our-team {
+  margin-top: 100px;
+}
+
+.our-team .item {
+  float: left;
+  width: 33.3333%;
+}
+.our-team .item img {
+  width: 250px;
+  height: 250px;
+  margin-top: 15px;
+  border-radius: 50%;
+}
+.our-team .item h4 {
+  color: #444;
+  font-size: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+.our-team .item span {
+  color: #aaa;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+}
+.our-team .item p {
+  padding-right: 50px;
+  font-family: arial;
+  color: #444;
+}
+
+.our-team .list2 ul {
+  padding: 0;
+  list-style: none;
+}
+.our-team .list2 ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.our-team .list2 ul li i {
+  font-size: 27px;
+  color: #777;
+  cursor: pointer;
+}
+/*End about team*/
+/*Start our work*/
+.work {
+  margin-top: 100px;
+}
+.work .gallary img {
+  float: left;
+  width: 25%;
+}
+.work .arrows {
+  text-align: center;
+}
+.work .arrows i {
+  margin-top: 20px;
+  margin-right: 15px;
+  font-size: 20px;
+  color: #333;
+}
+/*End our work*/
+/*start testimonial*/
+.testimonials {
+  margin-top: 100px;
+}
+.testimonials .info {
+  text-align: center;
+}
+.testimonials .info .image {
+  margin-bottom: 20px;
+}
+.testimonials .info .image img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.testimonials .info q {
+  color: #777;
+  line-height: 1.7;
+}
+.testimonials .info p {
+  color: #f37121;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*End restimonials*/
+/*start our blogs*/
+.ourblog .blog img {
+  width: 100%;
+  height: 250px;
+}
+.ourblog .blog {
+  width: 31.3333%;
+  float: left;
+  margin-right: 2%;
+}
+.ourblog .blog:not(:last-of-type) {
+  margin-right: 2%;
+}
+.blog h3 {
+  color: #f37121;
+  line-height: 1.1;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.blog p:first-of-type {
+  color: #777;
+  text-transform: capitalize;
+}
+.blog span {
+  color: #f37121;
+  text-transform: capitalize;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.blog p:last-of-type {
+  margin-top: 28px;
+  margin-right: 10px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+
+.ourblog button {
+  margin: 40px auto;
+  width: 250px;
+  height: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f37121;
+  border: none;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  display: block;
+  cursor: pointer;
+}
+.ourblog button:hover {
+  background: transparent;
+  color: #f37121;
+  border: 2px solid #f37121;
+}
+/*End our blogs*/
+/*Start Contact*/
+.contact {
+  margin-top: 100px;
+}
+.contact .input input {
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.contact .input input[type="text"]:not(:last-of-type) {
+  width: 49.3%;
+  display: inline-block;
+}
+.contact .input input[type="email"] {
+  width: 100%;
+}
+.contact .input input[type="text"]:first-of-type {
+  margin-right: 1%;
+}
+.contact .input input[type="text"]:last-of-type {
+  width: 100%;
+}
+.contact .input input::placeholder {
+  padding-left: 6px;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px 14px;
+}
+
+.contact button {
+  margin: 40px auto;
+  width: 250px;
+  height: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f37121;
+  border: none;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  display: block;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.contact button:hover {
+  background: transparent;
+  color: #f37121;
+  border: 2px solid #f37121;
+}
+/*End Contact*/
+/*start footer*/
+footer {
+  text-align: center;
+  padding-bottom: 30px;
+}
+footer span {
+  color: #f37121;
+  margin-left: 3px;
+}
+footer i {
+  color: red;
+}
+/*end footer*/
+
+/*my framwork*/
+.heading h2 {
+  text-align: center;
+  color: #f37121;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+hr {
+  display: block;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+}

@@ -1,0 +1,483 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*start navbar*/
+nav {
+  height: 0;
+  z-index: 2;
+  position: relative;
+}
+.row {
+  display: flex;
+}
+nav .logo {
+  margin-top: 20px;
+  flex: 50%;
+}
+nav .list {
+  flex: 50%;
+  margin-top: 20px;
+}
+nav .list ul {
+  list-style: none;
+}
+nav .list ul li {
+  display: inline-block;
+  margin-right: 16px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+nav .list ul li::after {
+  content: " ";
+  position: absolute;
+  top: 19px;
+  left: 1px;
+  height: 3px;
+  width: 0px;
+  background-color: blue;
+  transition: width 0.3s;
+}
+nav .list ul li:hover::after {
+  width: 38px;
+}
+/*End navbar*/
+/*Start header*/
+.header {
+  z-index: 1;
+  height: 800px;
+  background-image: url("../tamplet2images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.header svg {
+  margin-top: 580px;
+}
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 1) 100%);
+}
+.header .info {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-left: -337px;
+}
+.info h2 {
+  text-transform: capitalize;
+  font-size: 60px;
+  margin: 0;
+}
+.info p {
+  font-size: 22px;
+}
+.info input {
+  border: none;
+  padding: 13px;
+  width: 80%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-top: 60px;
+}
+.info button {
+  border: none;
+  padding: 13px 15px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #572f59;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.info button:hover {
+  background-color: #ff9900;
+}
+
+/*End header*/
+/*start offers*/
+.offers {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-color: #f5f5f5;
+}
+
+.offers .countries {
+  margin-top: 50px;
+}
+.offers .city {
+  flex: 23.5%;
+  max-width: 23.5%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.offers .city:not(:last-of-type) {
+  margin-right: 2%;
+}
+.offers .city img {
+  width: 100%;
+  box-shadow: 1px 1px 8px #777;
+}
+.offers .city .info {
+  padding: 10px 0 10px 20px;
+}
+.offers .city .info h4 {
+  font-size: 19px;
+  margin: 0;
+}
+.offers .city .info p {
+  font-size: 14px;
+  color: #999;
+}
+/*End offers*/
+/*start travellino*/
+.travellino {
+  background-image: url("../tamplet2images/travellino.jpg");
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.travellino .heading h2 {
+  color: #fff;
+  padding-top: 25px;
+}
+.travellino .boxes {
+  margin-top: 4%;
+}
+.travellino .box {
+  background-color: #fff;
+  flex: 32%;
+  max-width: 32%;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.travellino .box:not(:last-of-type) {
+  margin-right: 2%;
+}
+.travellino .box .icon {
+  position: relative;
+  background-color: #ff9900;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.travellino .box .icon:hover {
+  background-color: #572f59;
+}
+
+.travellino .box .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  color: #fff;
+}
+.travellino .box .h3 {
+  font-size: 15px;
+  font-weight: 900;
+}
+.travellino .box p {
+  color: #999;
+  font-size: 14px;
+}
+/*End travellino*/
+/*start blog*/
+.blogs {
+  margin-top: 70px;
+}
+.blogs .items {
+  margin-top: 60px;
+}
+.blogs .box {
+  flex: 32%;
+  max-width: 32%;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+.blogs .box:not(:last-of-type) {
+  margin-right: 2%;
+}
+.blogs .box .date {
+  margin-top: 30px;
+}
+.blogs .box .date span {
+  color: #999;
+  margin-right: 13px;
+  font-size: 14px;
+}
+.blogs .box .date i {
+  color: #572f59;
+  margin-right: 5px;
+}
+.blogs .box:hover {
+  box-shadow: 0 0px 20px #aaa;
+}
+.blogs .box h3 {
+  font-weight: 700;
+}
+.blogs .box p {
+  color: #999;
+  font-size: 14px;
+}
+
+/*End blog*/
+/*start back-1*/
+.back {
+  position: relative;
+  margin-top: 60px;
+  height: 550px;
+  background-image: url("../tamplet2images/back-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.back .info {
+  position: absolute;
+  top: 30%;
+}
+.back .info p {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.back .info button {
+  display: inline;
+}
+/*End back-1*/
+/*start counter*/
+.counter {
+  margin-top: 80px;
+}
+.counter .item {
+  flex: 25%;
+  max-width: 25%;
+  text-align: center;
+}
+.counter .item span {
+  display: block;
+}
+.counter .item span:first-of-type {
+  margin-top: 12px 0 5px 0;
+  font-size: 33px;
+  font-weight: bold;
+}
+.counter .item span:last-of-type {
+  font-style: italic;
+  color: #999;
+}
+/*End counter*/
+/*start back-2*/
+.back-2 {
+  direction: rtl;
+  position: relative;
+  margin-top: 60px;
+  height: 550px;
+  background-image: url("../tamplet2images/back-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.back-2 .info {
+  position: absolute;
+  top: 30%;
+}
+.back-2 .info p {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.back-2 .info button {
+  display: inline;
+}
+.back-2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/*End back-2*/
+/*Start testimonials*/
+
+.testimonials {
+  margin: 70px 0 100px;
+}
+.testimonials .boxes {
+  margin-top: 50px;
+}
+.testimonials .box {
+  flex: 33.3333%;
+  max-width: 33.3333%;
+  text-align: center;
+}
+.testimonials .box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.testimonials .box h4 {
+  font-weight: 800;
+  font-size: 15px;
+  color: #333;
+}
+.testimonials .box p {
+  font-style: italic;
+  color: #999;
+  font-size: 14px;
+  padding: 0 30px;
+}
+/*End testimonials*/
+/*Start Contact*/
+.contact {
+  margin: 70px 0;
+}
+.contact .box {
+  flex: 33.3333%;
+  max-width: 33.3333%;
+  padding-right: 70px;
+}
+.contact .box .num-1 p {
+  color: #999;
+  font-size: 14px;
+}
+.contact .box h5 {
+  font-size: 18px;
+  margin-top: 0;
+  font-weight: 500;
+}
+.contact .box ul {
+  list-style: none;
+  padding: 0;
+}
+.contact .box .num-2 ul li {
+  margin-bottom: 20px;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+}
+.contact .box .num-2 ul li i {
+  margin-right: 10px;
+  font-size: 17px;
+  color: #666;
+}
+.contact .box .num-3 li {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact .box .num-3 li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #999;
+  transition: 0.3s;
+}
+.contact .box .num-3 li:hover {
+  background-color: #333;
+  color: #fff;
+}
+.contact .box .num-3 li i:hover {
+  color: #fff;
+}
+/*End Contact*/
+/*start footer*/
+footer {
+  margin: 30px 0;
+  text-align: center;
+}
+footer p {
+  color: #999;
+  font-size: 14px;
+}
+footer span {
+  color: #572f59;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+/*End footer*/
+
+/*start framework*/
+.main-btn {
+  border: none;
+  padding: 13px 15px;
+  border-radius: 21px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #572f59;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main-btn:hover {
+  background-color: #ff9900;
+}
+
+.heading {
+  text-align: center;
+}
+.heading h2 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 200;
+}
+.heading p {
+  margin: 10px;
+  color: #777;
+}
+hr {
+  margin: 0 50px;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
